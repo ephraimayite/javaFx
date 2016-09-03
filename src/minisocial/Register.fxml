@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minisocial.MyController">
+   <children>
+      <TextField fx:id="firstname" layoutX="180.0" layoutY="56.0" prefHeight="25.0" prefWidth="182.0" promptText="Enter your first name here" />
+      <TextField fx:id="lastname" layoutX="181.0" layoutY="123.0" prefHeight="25.0" prefWidth="182.0" promptText="Enter your last name here" />
+      <Label layoutX="30.0" layoutY="60.0" text="First name:" />
+      <Label layoutX="30.0" layoutY="127.0" text="Last name:" />
+      <Label layoutX="30.0" layoutY="192.0" text="Username:" />
+      <TextField fx:id="username" layoutX="181.0" layoutY="188.0" prefHeight="25.0" prefWidth="182.0" promptText="Enter your  username here" />
+      <TextField fx:id="password" layoutX="181.0" layoutY="247.0" prefHeight="25.0" prefWidth="182.0" promptText="Enter your password here" />
+      <Label layoutX="34.0" layoutY="251.0" text="Password" />
+      <Button layoutX="189.0" layoutY="342.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="33.0" prefWidth="120.0" text="Register" />
+      <Button layoutX="18.0" layoutY="14.0" mnemonicParsing="false" text="Return to Main Screen" />
+      <Label layoutX="37.0" layoutY="303.0" text="Age" />
+      <TextField fx:id="age" layoutX="181.0" layoutY="299.0" prefHeight="25.0" prefWidth="182.0" promptText="Enter your age here" />
+      <Label fx:id="error2" layoutX="394.0" layoutY="127.0" prefHeight="17.0" prefWidth="200.0" />
+      <Label fx:id="error1" layoutX="373.0" layoutY="60.0" prefHeight="17.0" prefWidth="200.0" />
+      <Label fx:id="error3" layoutX="394.0" layoutY="192.0" prefHeight="17.0" prefWidth="200.0" />
+      <Label fx:id="error4" layoutX="394.0" layoutY="251.0" prefHeight="17.0" prefWidth="200.0" />
+      <Label fx:id="error5" layoutX="402.0" layoutY="303.0" prefHeight="17.0" prefWidth="200.0" />
+      <Label fx:id="duplicate" layoutX="211.0" layoutY="18.0" textFill="#e42c14">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

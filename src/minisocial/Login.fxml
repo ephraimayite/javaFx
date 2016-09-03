@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minisocial.HomeController">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="586.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="79.0" text="Username:" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="30.0" right="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="username2" prefHeight="25.0" prefWidth="278.0" promptText="Please enter your username" />
+                  <Label fx:id="ErrorMessage1" prefHeight="25.0" prefWidth="125.0" textFill="#f84e16" />
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="580.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="83.0" text="Password:">
+                     <HBox.margin>
+                        <Insets left="30.0" right="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="password2" prefHeight="25.0" prefWidth="278.0" promptText="Please enter your password">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></PasswordField>
+                  <Label fx:id="ErrorMessage2" prefHeight="64.0" prefWidth="129.0" textFill="#e87f0f" />
+               </children>
+            </HBox>
+            <Label fx:id="ErrorMessage3" layoutX="10.0" layoutY="176.0" prefHeight="37.0" prefWidth="235.0" textFill="#5d63a6">
+               <VBox.margin>
+                  <Insets left="200.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <HBox>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#Login" text="Login">
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="180.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Register">
+               <padding>
+                  <Insets bottom="30.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="80.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
